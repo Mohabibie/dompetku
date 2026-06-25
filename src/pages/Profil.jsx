@@ -8,11 +8,11 @@ import {
 } from "lucide-react";
 
 const menuProfil = [
-  { label: "Akun", sub: "Manajemen Akun", icon: User },
-  { label: "Privasi", sub: "Ganti Username dan Kata Sandi", icon: Lock },
-  { label: "Bahasa", sub: "Inggris, Indonesia, Vietnam, Melayu", icon: Globe },
-  { label: "Notifikasi", sub: "Aktifkan/Nonaktifkan", icon: Bell },
-  { label: "Preferensi Konten", sub: "Konten Bermanfaat Tentang Menabung", icon: BookOpen },
+  { label: "Akun", sub: "Manajemen Akun", icon: User, path: "/akun" },
+  { label: "Privasi", sub: "Ganti Username dan Kata Sandi", icon: Lock, path: null },
+  { label: "Bahasa", sub: "Inggris, Indonesia, Vietnam, Melayu", icon: Globe, path: null },
+  { label: "Notifikasi", sub: "Aktifkan/Nonaktifkan", icon: Bell, path: null },
+  { label: "Preferensi Konten", sub: "Konten Bermanfaat Tentang Menabung", icon: BookOpen, path: null },
 ];
 
 export default function Profil() {
