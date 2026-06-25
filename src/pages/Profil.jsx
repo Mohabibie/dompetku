@@ -57,10 +57,12 @@ export default function Profil() {
 
       {/* Menu pengaturan */}
       <div className="mx-4 mt-4 space-y-2">
-        {menuProfil.map(({ label, sub, icon: Icon }) => (
+        {menuProfil.map(({ label, sub, icon: Icon, path }) => (
           <button
             key={label}
-            className="w-full bg-gelap rounded-2xl px-5 py-4 flex items-center gap-4 text-left"
+            onClick={() => path && navigate(path)}
+            className="w-full rounded-2xl px-5 py-4 flex items-center gap-4 text-left"
+            style={{ backgroundColor: "#1A1A1A" }}
           >
             <Icon size={20} className="text-gray-400 flex-shrink-0" />
             <div className="flex-1">
