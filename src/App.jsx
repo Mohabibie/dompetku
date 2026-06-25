@@ -8,6 +8,7 @@ import Beranda from "./pages/Beranda";
 import Histori from "./pages/Histori";
 import Statistik from "./pages/Statistik";
 import Profil from "./pages/Profil";
+import MenuAkun from "./pages/MenuAkun";
 
 function PrivateRoute({ children }) {
   const { user } = useAuth();
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/histori" element={<PrivateRoute><Histori /></PrivateRoute>} />
         <Route path="/statistik" element={<PrivateRoute><Statistik /></PrivateRoute>} />
         <Route path="/profil" element={<PrivateRoute><Profil /></PrivateRoute>} />
+        <Route path="/akun" element={<PrivateRoute><MenuAkun /></PrivateRoute>} />
       </Routes>
     </BrowserRouter>
   );
