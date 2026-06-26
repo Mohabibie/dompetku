@@ -48,7 +48,7 @@ export default function Login() {
         {/* Input Username */}
         <input
           type="text"
-          placeholder="Masukkan username"
+          placeholder="Masukkan Email"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className="border border-gray-300 rounded-2xl px-5 py-4 mb-4 text-sm focus:outline-none focus:border-hijau"
